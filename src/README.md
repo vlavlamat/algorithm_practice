@@ -5,14 +5,16 @@ This project is a collection of algorithmic challenges implemented in Rust. The 
 ## Challenges Included
 
 ### 1. **Digit Multiplication Reduction**
+[Digit Multiplication Reduction](src/bin/digit_product.rs)
 Write a function that calculates the product of the digits of a number, ignoring zeros. Repeat this operation on the result until a single-digit number is obtained.
 
 ### 2. **Fibonacci Sequence**
+[Fibonacci Sequence](fibonacci.rs)
 - Implement a function to calculate the Fibonacci sequence element at index `n`.
 - Write a second function that returns the Fibonacci sequence from the first element up to the `n`th element.
 - Include tests to validate both functions.
 
-### 3. **FizzBuzz**
+### 3. **[FizzBuzz](fizzbuzz.rs)**
 - Write a function that converts a number into a string based on the following rules:
     1. If the number is divisible by 3, return "Fizz".
     2. If the number is divisible by 5, return "Buzz".
