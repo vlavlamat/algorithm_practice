@@ -1,0 +1,9 @@
+# Ignore editor-specific directories and files
+.idea/          # IntelliJ IDEA project files
+.vscode/        # Visual Studio Code settings
+
+# Ignore compiled artifacts
+/target        # Rust build output directory
+
+# Dependency lockfile (optional for libraries)
+Cargo.lock      # Lock file to ensure reproducible builds, typically ignored in libraries
