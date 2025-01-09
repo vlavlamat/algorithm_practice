@@ -1,6 +1,8 @@
 #![allow(dead_code)]
 /*
-    Write a function that calculates the product of the digits of a number, ignoring zeros. Repeat this operation on the result until a single-digit number is obtained.
+    Write a function that calculates the product of the digits of a number,
+    ignoring the digit 0. Then repeat the operation with the result of the product
+    until a single-digit number is obtained.
 */
 
 fn digit_product(n: u32) -> u8 {
