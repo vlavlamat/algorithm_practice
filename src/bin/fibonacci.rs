@@ -56,6 +56,5 @@ mod tests {
     }
 }
 fn main() {
-    fib_recurse(6);
-    fib_iter(8);
+    println!("Hello, Fibonacci!");
 }
