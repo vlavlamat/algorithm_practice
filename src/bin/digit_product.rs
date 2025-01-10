@@ -6,7 +6,27 @@
 */
 
 fn digit_product(n: u32) -> u8 {
-    todo!("Product of digits")
+    let mut number_as_string = n.to_string();
+    let mut product;
+    if n == 0 {
+        return 0;
+    }
+    loop {
+        product = 1;
+        for char in number_as_string.chars() {
+            let number_from_char = char.to_digit(10).unwrap();
+            if number_from_char == 0 {
+                continue;
+            }
+            product *= number_from_char;
+        }
+        if product < 10 {
+            break;
+        } else {
+            number_as_string = product.to_string();
+        }
+    }
+    product as u8
 }
 
 #[cfg(test)]
@@ -25,5 +45,5 @@ mod tests {
 }
 
 fn main() {
-    digit_product(123456);
+    println!("Hello, digit_product!");
 }
