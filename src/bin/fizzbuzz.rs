@@ -12,7 +12,12 @@
 */
 
 fn fizzbuzz(num: u32) -> String {
-    todo!("FizzBuzz")
+    match (num % 3 == 0, num % 5 == 0) {
+        (true, true) => "FizzBuzz".into(),
+        (true, false) => "Fizz".into(),
+        (false, true) => "Buzz".into(),
+        _ => num.to_string(),
+    }
 }
 
 #[cfg(test)]
@@ -32,5 +37,5 @@ mod tests {
     }
 }
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, FizzBuzz!");
 }
